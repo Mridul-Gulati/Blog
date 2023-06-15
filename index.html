@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="branding">
+    <div class="header">
+
+        <div class="header_left">
+            <img src="./images/logo.png" alt="Logo">
+        </div>
+
+        <div class="header_right">
+            <form>
+                <i class="fa fa-search"></i>
+                <input type="text" size="36" placeholder= "Tips and tricks of tech">
+            </form>
+            
+        </div>
+    </div>
+    <div id="myLinks">
+        <a href="#blogs">Blogs</a>
+        <a href="#events">Events</a>
+        <a href="#news">News</a>
+        <a href="#jobs">Jobs</a>
+    </div>
+    <div>
+        <hr style="margin-top:10px;margin-left: 200px;border-width: 1px; width: 75%;">
+    </div>
+    <p style="text-align: center; margin-top: 30px;margin-left:200px;color:white; font-size: 16px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">We explain and teach technology, solve tech problems and help you make gadget buying decisions.</p>
+    </div>
+
+    <div id="blogs" class="featured">
+        <h2>BLOGS</h2>
+    </div>
+    <div class="card-grid">
+        <div class="card">
+          <img src="./images/pic1.png" alt="Blog Image 1">
+          <a href="#">
+          <h3 class="title">Blog Title 1</h3>
+        </a>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        
+        <div class="card">
+          <img src="./images/pic2.png" alt="Blog Image 2">
+           <a href="#">
+            <h3 class="title">Blog Title 2</h3>
+        </a> 
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        
+        <div class="card">
+          <img src="./images/pic3.png" alt="Blog Image 3">
+          <a href="#">
+            <h3 class="title">Blog Title 3</h3>
+          </a>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+
+      <div id="events" class="fade-in">
+        <div>
+            <h1>UPCOMING EVENTS</h1>
+        </div>
+        <div class="card-grid">
+            <div class="card-event">
+              <img src="./images/pic1.png" alt="Blog Image 1">
+              <a href="#" style="color: white">
+              <h3 class="title">EVENT 1</h3>
+            </a>
+              <p style="color: white" class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            
+            <div class="card-event">
+              <img src="./images/pic2.png" alt="Blog Image 2">
+               <a href="#">
+                <h3 class="title" style="color:white;">EVENT 2</h3>
+            </a> 
+              <p style="color: white" class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            
+            <div class="card-event">
+              <img src="./images/pic3.png" alt="Blog Image 3">
+              <a href="#" style="color: white;">
+                <h3 class="title">EVENT 3</h3>
+              </a>
+              <p style="color: white" class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>    
+    </div>
+
+      <div id="news" class="featured fade-in">
+        <div>
+            <h2>NEWS FEEDS</h2>
+        </div>
+    <div class="card-grid">
+        <div class="card">
+          <img src="./images/pic4.png" alt="Blog Image 1">
+          <a href="#">
+          <h3 class="title">NEWS 1</h3>
+        </a>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        
+        <div class="card">
+          <img src="./images/pic5.png" alt="Blog Image 2">
+           <a href="#">
+            <h3 class="title">NEWS 2</h3>
+        </a> 
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        
+        <div class="card">
+          <img src="./images/pic6.png" alt="Blog Image 3">
+          <a href="#">
+            <h3 class="title">NEWS 3</h3>
+          </a>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      </div>
+      <div id="jobs">
+            <img src="./images/logo.png" alt="Logo">
+            <h1>JOBS</h1>
+            <div class="jobs-container">
+                <div class="column column-1">
+                    <h3>WEB DEVELOPER</h3>
+                    
+                </div>
+                <div class="column column-2">
+                    <h3>ANDROID DEVELOPER</h3>
+                </div>
+                <div class="column column-3">
+                    <h3>FULL STACK DEVELOPER</h3>
+                </div>
+    
+                <a href="#" class="link link-1">APPLY HERE</a>
+                <a href="#" class="link link-2">APPLY HERE</a>
+                <a href="#" class="link link-3">APPLY HERE</a>
+            </div>
+       </div>
+   <script>
+        window.addEventListener('scroll',reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.fade-in');
+            for(var i =0; i<reveals.length; i++){
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+            }
+        }
+   </script>
+</body>
+</html>

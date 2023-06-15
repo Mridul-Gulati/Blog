@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#branding {
+    background-color: #2a0071;
+    background-image: linear-gradient(145deg, #b77bfb, #2a0071 30%);
+    height: 350px;
+    transition: height 0.3s ease;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_right>form>input {
+    margin-top: 110px;
+    border-radius: 20px;
+    margin-right: 55px;
+    border: 0;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 30px;
+    background-color: rgba(214, 139, 254, 0.476);
+    color: white;
+    text-align: center;
+}
+
+::placeholder {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+form>i {
+    color: white;
+    margin-top: 117px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+.header_left>img {
+    margin-left: 40px;
+    margin-top: 10px;
+    height: 230px;
+}
+
+
+#myLinks {
+    display: flex;
+    margin-left: 550px;
+}
+
+
+#myLinks>a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+#myLinks>a:hover {
+    text-decoration: underline;
+}
+
+.featured {
+    color: black;
+    font-weight: 600;
+    margin-left: 80px;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 70px;
+    margin-top: 20px;
+    margin-right: 70px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.289);
+
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.description {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card>a {
+    text-decoration: none;
+    color: black;
+}
+
+.card>a:hover {
+    text-decoration: underline;
+}
+
+#events {
+    margin-top: 40px;
+    background-color: #2a0071;
+    background-image: linear-gradient(145deg, #b77bfb, #2a0071 30%);
+    height: 450px;
+}
+
+#events>div>h1 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.card-event {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.289);
+}
+
+.card-event img {
+    width: 100%;
+    height: auto;
+}
+
+.card-event a:hover {
+    text-decoration: underline;
+}
+
+.card-event a {
+    text-decoration: none;
+    color: white;
+}
+
+#jobs {
+    margin-top: 40px;
+    background-color: #2a0071;
+    background-image: linear-gradient(145deg, #b77bfb, #2a0071 30%);
+    height: 350px;
+    padding-bottom: 250px;
+}
+
+#jobs>img {
+    height: 150px;
+    margin-left: 60px;
+    position: absolute;
+}
+
+
+#jobs>h1 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    position: relative;
+    padding-top: 55px;
+}
+
+#jobs>div>ul {
+    list-style: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.fade-in {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.fade-in.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.jobs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0;
+    height: 100%;
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.column {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100%;
+}
+
+.column::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #290071af, #ee7eff6f);
+    mix-blend-mode: multiply;
+}
+
+.column-1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url('./images/pexels-antonio-borriello-1297611.jpg');
+    height: 100%;
+    background-position: center;
+}
+
+.column-2 {
+    grid-area: 1 / 2 / 2 / 3;
+    background-image: url('./images/pexels-cottonbro-studio-3584926.jpg');
+    height: 100%;
+}
+
+.column-3 {
+    grid-area: 1 / 3 / 2 / 4;
+    background-image: url('./images/pexels-cottonbro-studio-5076531.jpg');
+    height: 100%;
+}
+
+.column h3 {
+    position: relative;
+    text-align: center;
+    padding-top: 15%;
+    z-index: 1;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.links .link-1 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.links .link-2 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.links .link-3 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.jobs-container a {
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
